@@ -54,8 +54,14 @@ To install and run xv6-riscv on macOS, you can use Homebrew to install the neces
 ```
 Follow the on-screen instructions to complete the installation.
 
-2. Install the necessary dependencies: Run the following command in the terminal to install the required packages using Homebrew:
+2. Install the Homebrew repository for RISC-V toolchain maintained by RISC-V.
+```bash
+brew tap riscv-software-src/riscv
+```
+
+3. Install the necessary dependencies: Run the following command in the terminal to install the required packages using Homebrew:
 ```bash
 brew install riscv-gnu-toolchain qemu
 ```
-3. Follow the steps outlined in the "How to install and run xv6-riscv on Ubuntu" section above to clone the xv6-riscv repository, build xv6-riscv, and run it on macOS.
+
+4. Follow the steps outlined in the "How to install and run xv6-riscv on Ubuntu" section above to clone the xv6-riscv repository, build xv6-riscv, and run it on macOS.

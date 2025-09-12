@@ -3,7 +3,7 @@
 
 To install and run xv6-riscv on Ubuntu 24.04 LTS, follow these steps:
 
-1. Install the necessary dependencies: Open a terminal and execute the following commands to update your package list and install the required packages:
+1. Install the necessary dependencies: Open a linux terminal and execute the following commands to update your package list and install the required packages:
 ```bash
 sudo apt update
 sudo apt install -y build-essential gcc-riscv64-linux-gnu qemu-system-riscv64 gdb-multiarch

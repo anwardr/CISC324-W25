@@ -36,13 +36,9 @@ To install and run xv6-riscv on Windows, you can use the Windows Subsystem for L
 ```bash
 wsl --install
 ```
-Follow the on-screen instructions to complete the installation.
+Follow the on-screen instructions to complete the installation. This will automatically install Ubuntu on your machine.
 
-2. Install Ubuntu on WSL: Open the Microsoft Store and search for "Ubuntu." Click on "Ubuntu" and then click "Install" to download and install the Ubuntu distribution on WSL.
-
-3. Set up Ubuntu on WSL: Launch Ubuntu from the Start menu or by typing "Ubuntu" in the search bar. Follow the on-screen instructions to set up your Ubuntu environment.
-
-4. Follow the steps outlined in the "How to install and run xv6-riscv on Ubuntu" section above to install and run xv6-riscv on WSL.
+2. Follow the steps outlined in the "How to install and run xv6-riscv on Ubuntu" section above to install and run xv6-riscv on WSL.
 
 # How to install and run xv6-riscv on macOS
 

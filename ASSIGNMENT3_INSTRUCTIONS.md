@@ -28,35 +28,39 @@ This assignment has **two parts** focusing on synchronization mechanisms (mutexe
 
 ## Part 1: Explore Basic Mutex Functionality in xv6-riscv (25%)
 
-### What is Given
+### What is Given / Tasks To Do
 
 A boilerplate code file [`counter.c`](user/counter.c) is provided in the `user/` directory.
 
-### Task To Do
+#### Step 1: Run Without Mutex
 
-1. **Run the program without mutex** to observe the behavior without proper synchronization:
-   ```bash
-   make clean && make qemu
-   # In the xv6 shell:
-   counter
-   ```
+**Run the program without mutex** to observe the behavior without proper synchronization:
+```bash
+make clean && make qemu
+# In the xv6 shell:
+counter
+```
 
-2. **Run the program with mutex** to observe synchronized behavior:
-   ```bash
-   make clean && make qemu
-   # In the xv6 shell:
-   counter mutex
-   ```
+**Record** the program output with your explanation in a file named `assignment3_Last4Digit_ID.pdf` in the project directory.
 
-3. **Fill in the TODO** sections with appropriate lines of code to implement proper mutex-based synchronization
+#### Step 2: Complete the TODOs
 
-4. **Re-run the program** after making your changes in both modes (with and without mutex)
+**Fill in the TODO** sections with appropriate lines of code to implement proper mutex-based synchronization.
 
-5. **Record your observations** in your assignment report, including:
-   - Output when running `counter` (without mutex)
-   - Output when running `counter mutex` (with mutex)
-   - Output after implementing the TODO sections
-   - Explanation of what changed and why
+#### Step 3: Test Your Implementation
+
+**Run the program with mutex** to observe synchronized behavior after completing the TODOs:
+```bash
+make clean && make qemu
+# In the xv6 shell:
+counter mutex
+```
+
+**Record** the program output with your explanation in the same `assignment3_Last4Digit_ID.pdf` file, including:
+- Output when running `counter` (without mutex) from Step 1
+- Explanation of the TODO implementations
+- Output when running `counter mutex` (with mutex) after implementing TODOs
+- Explanation of what changed and why the mutex implementation fixes the synchronization issues
 
 ---
 
@@ -130,7 +134,7 @@ Run the `pizzadelivery` program in **two modes**:
    pizzadelivery 2 2 vip
    ```
 
-**Record** the program output for both modes with your explanation in the assignment report.
+**Record** the program output for both modes with your explanation in the same `assignment3_Last4Digit_ID.pdf` file.
 
 #### Step 2: Complete the TODOs
 
@@ -157,7 +161,7 @@ After addressing all the TODOs, run the code again in **both modes**:
    pizzadelivery vip
    ```
 
-**Record** the program output for both modes with your explanation in the assignment report.
+**Record** the program output for both modes with your explanation in the same `assignment3_Last4Digit_ID.pdf` file.
 
 ---
 
@@ -165,17 +169,10 @@ After addressing all the TODOs, run the code again in **both modes**:
 
 You must submit the following:
 
-1. **Compressed xv6-riscv folder** containing all your modified code
+1. **Submit the overall compressed xv6-riscv folder**
    - Make sure to run `make clean` before compressing to reduce file size
-   - Name: `CISC324_A3_LastName_StudentID.tar.gz` or `.zip`
 
-2. **Assignment Report (PDF)**
-   - Name: `assignment3_Last4Digit_ID.pdf`
-   - Must include:
-     - **Part 1**: Observations before and after completing TODOs in `counter.c`
-     - **Part 2, Step 1**: Output and explanation for original `pizzadelivery` (both modes)
-     - **Part 2, Step 3**: Output and explanation for modified `pizzadelivery` (both modes)
-     - Analysis of what changed and why your implementation works
+2. **Assignment report PDF file named `assignment3_Last4Digit_ID.pdf`**
 
 ---
 

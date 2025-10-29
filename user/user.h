@@ -40,6 +40,18 @@ void *memcpy(void *, const void *, uint);
 char* sbrk(int);
 char* sbrklazy(int);
 
+// Mutex system calls
+int mutex_create(void);
+int mutex_destroy(int);
+int mutex_lock(int);
+int mutex_unlock(int);
+
+// Semaphore system calls
+int sem_create(int);
+int sem_destroy(int);
+int sem_wait(int);
+int sem_signal(int);
+
 // printf.c
 void fprintf(int, const char*, ...) __attribute__ ((format (printf, 2, 3)));
 void printf(const char*, ...) __attribute__ ((format (printf, 1, 2)));

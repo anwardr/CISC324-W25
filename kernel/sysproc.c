@@ -107,3 +107,67 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// System call wrappers for mutex operations
+uint64
+sys_mutex_create(void)
+{
+  return mutex_create();
+}
+
+uint64
+sys_mutex_destroy(void)
+{
+  int mutex_id;
+  argint(0, &mutex_id);
+  return mutex_destroy(mutex_id);
+}
+
+uint64
+sys_mutex_lock(void)
+{
+  int mutex_id;
+  argint(0, &mutex_id);
+  return mutex_lock(mutex_id);
+}
+
+uint64
+sys_mutex_unlock(void)
+{
+  int mutex_id;
+  argint(0, &mutex_id);
+  return mutex_unlock(mutex_id);
+}
+
+// System call wrappers for semaphore operations
+uint64
+sys_sem_create(void)
+{
+  int initial_value;
+  argint(0, &initial_value);
+  return sem_create(initial_value);
+}
+
+uint64
+sys_sem_destroy(void)
+{
+  int sem_id;
+  argint(0, &sem_id);
+  return sem_destroy(sem_id);
+}
+
+uint64
+sys_sem_wait(void)
+{
+  int sem_id;
+  argint(0, &sem_id);
+  return sem_wait(sem_id);
+}
+
+uint64
+sys_sem_signal(void)
+{
+  int sem_id;
+  argint(0, &sem_id);
+  return sem_signal(sem_id);
+}

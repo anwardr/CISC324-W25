@@ -119,6 +119,20 @@ void            releasesleep(struct sleeplock*);
 int             holdingsleep(struct sleeplock*);
 void            initsleeplock(struct sleeplock*, char*);
 
+// mutex.c
+void            mutexinit(void);
+int             mutex_create(void);
+int             mutex_destroy(int);
+int             mutex_lock(int);
+int             mutex_unlock(int);
+
+// semaphore.c
+void            seminit(void);
+int             sem_create(int);
+int             sem_destroy(int);
+int             sem_wait(int);
+int             sem_signal(int);
+
 // string.c
 int             memcmp(const void*, const void*, uint);
 void*           memmove(void*, const void*, uint);

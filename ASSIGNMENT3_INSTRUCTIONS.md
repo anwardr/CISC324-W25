@@ -1,6 +1,6 @@
 # CISC 324 - Assignment 3: Synchronization in xv6-riscv
 
-**Due Date:** [TBD - Insert Due Date Here]
+**Due Date:** [Nov. 10, 2025]
 
 **Weight:** 100 points
 
@@ -9,13 +9,13 @@
 Before starting the assignment, you need to clone the `feature/a3` branch of the repository:
 
 ```bash
-git clone --branch feature/a3 --single-branch git@github.com:anwardr/CISC324-W25.git
+git clone --branch feature/a3 --single-branch git@github.com:anwardr/CISC324-F25.git
 ```
 
 After cloning, navigate to the repository directory:
 
 ```bash
-cd CISC324-W25
+cd CISC324-F25
 ```
 
 ---

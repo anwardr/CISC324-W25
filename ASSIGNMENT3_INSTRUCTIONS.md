@@ -1,6 +1,6 @@
 # CISC 324 - Assignment 3: Synchronization in xv6-riscv
 
-**Due Date:** [Nov. 10, 2025]
+**Due Date:** Nov. 10, 2025
 
 **Weight:** 100 points
 

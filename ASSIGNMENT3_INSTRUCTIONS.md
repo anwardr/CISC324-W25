@@ -9,7 +9,7 @@
 Before starting the assignment, you need to clone the `feature/a3` branch of the repository:
 
 ```bash
-git clone --branch feature/a3 --single-branch git@github.com:anwardr/CISC324-F25.git
+git clone --branch feature/a3 --single-branch https://github.com/anwardr/CISC324-F25.git
 ```
 
 After cloning, navigate to the repository directory:
